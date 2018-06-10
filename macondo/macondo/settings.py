@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-import json
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -20,18 +19,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
-# Import project settings
-try:
-    with BASE_DIR.joinpath('.macondo', 'config.json').open() as handle:
-        CONFIG = json.load(handle)
-except IOError:
-    CONFIG = {
-        'secret_key': 'qy_f9y6a5wb+#!$ru4+m!b50gu%sj1zun_*4jt5egdsj@j&2t%'
-    }
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = CONFIG.get('secret_key')
-
+SECRET_KEY = '0dsc*4ygjzk=q9w_9o!_2+5y9w*i%^)b5&^v6wh1ppb$63d-hv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
