@@ -1,2 +1,6 @@
+# Macondo
 .macondo/macondo.json
 .editorconfig
+
+# Django
+db.sqlite3

@@ -25,16 +25,17 @@ try:
         CONFIG = json.load(config_file)
 except IOError:
     CONFIG = {
-
+        'secret_key': 'your_secret_key_here',
+        'allowed_hosts': ['127.0.0.1', 'localhost']
     }
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = CONFIG.get('secret_key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = CONFIG.get('allowed_hosts', [])
 
 
 # Application definition
