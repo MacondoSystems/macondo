@@ -1,7 +1,8 @@
 # Pypi
+.pypirc
 buid/
 dist/
-macondo.egg-info
+macondo.egg-info/
 
 # Django
 db.sqlite3
