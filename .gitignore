@@ -1,3 +1,7 @@
+# Pypi
+buid/
+dist/
+
 # Django
 db.sqlite3
 
