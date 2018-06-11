@@ -1,6 +1,6 @@
 {
   "secret_key": "your_secret_key_here",
-  "allowed_hosts": ["127.0.0.1", "localhost"],
+  "allowed_hosts": ["*"],
   "db_host": "127.0.0.1",
   "db_port": "1234",
   "db_user": "user",

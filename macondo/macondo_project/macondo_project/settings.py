@@ -26,7 +26,7 @@ try:
 except IOError:
     CONFIG = {
         'secret_key': 'your_secret_key_here',
-        'allowed_hosts': ['127.0.0.1', 'localhost']
+        'allowed_hosts': ['*']
     }
 
 # SECURITY WARNING: keep the secret key used in production secret!
