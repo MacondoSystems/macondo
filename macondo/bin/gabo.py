@@ -38,8 +38,10 @@ class Gabo:
         print('Gabo is publishing {0}...'.format(args.document))
 
 
-macondo_project = Gabo()
-
-if __name__ == '__main__':
+def main():
+    Gabo()
     args = parser.parse_args()
     args.func(args)
+
+if __name__ == '__main__':
+    main()

@@ -6,7 +6,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='macondo',
-    version='0.0.0.1',
+    version='0.0.0.2',
     author='Andres Lujan',
     author_email='info@andresroot.co',
     description='A CMS',
@@ -15,6 +15,11 @@ setuptools.setup(
     url='https://github.com/MacondoSystems/macondo/',
     packages=['macondo'],
     keywords=['cms', 'django', 'privacy'],
+    scripts=['macondo/bin/gabo.py'],
+    install_requires=['Django'],
+    entry_points={'console_scripts': [
+        'gabo=wagtail=macondo.bin.gabo:main'
+    ]},
     classifiers=(
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
