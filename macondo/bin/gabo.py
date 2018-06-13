@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 from django.core.management import ManagementUtility
-import gabo
+from pathlib import Path
 import os
 
 
@@ -21,8 +21,8 @@ class Gabo:
     def start(self, args):
         project_name = args.project_name
         print('Gabo is starting {0}...'.format(project_name))
-        path = os.path.dirname(gabo.__file__)
-        macondo_project_path = os.path.join(path, 'macondo_project')
+        PROJECT_PACKAGE = Path(__file__).resolve().parent.parent
+        macondo_project_path = os.path.join(PROJECT_PACKAGE, 'macondo_project')
 
         django_args = [
             'django-admin.py',

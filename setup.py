@@ -6,7 +6,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='macondo',
-    version='0.0.0.9',
+    version='0.0.0.10',
     author='Andres Lujan',
     author_email='info@andresroot.co',
     description='A CMS',
