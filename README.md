@@ -1,2 +1,2 @@
 # macondo
-A Publishing Platform
+A magically-reallistic publishing platform
