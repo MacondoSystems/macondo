@@ -1,2 +1,2 @@
 # macondo
-Privacy Oriented Publishing Platform
+A Publishing Platform
